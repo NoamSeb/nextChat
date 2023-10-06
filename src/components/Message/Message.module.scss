@@ -1,0 +1,15 @@
+.messages {
+  left: 0;
+  right: 0;
+  text-align: left;
+  margin: auto;
+  width: 50vw;
+  opacity: 0;
+  transform: translateX(-100px);
+
+  &__self {
+    text-align: right;
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
