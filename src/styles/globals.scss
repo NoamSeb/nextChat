@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Heiti";
+  src: url("../font/STHeitiTC-Light.woff") format("woff");
+  src: url("../font/STHeitiTC-Light.woff2") format("woff2");
+}
+
+body {
+  background-color: #100e10;
+  color: white;
+  font-family: "Heiti";
+}

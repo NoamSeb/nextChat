@@ -1,36 +1,37 @@
-.userList{
-    position:fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    row-gap: 12px;
+.userList {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
 }
-.notification{
-    width: 9px;
-    height: 9px;
-    background-color: lightblue;
-    display:  inline-block;
-    border-radius:20px;
-    margin-left: 10px;
+.notification {
+  width: 9px;
+  height: 9px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 20px;
+  margin-left: 10px;
 }
-.user{
-    cursor:pointer;
-    width: 10vw;
-    padding: 10px;
-    border-radius: 10px;
-    opacity: 0;
-    transform:translateX(-100px);
-    transition: background-color 0.5s;
+.user {
+  cursor: pointer;
+  width: 10vw;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: background-color 0.5s;
 
-    &:hover{
-        background-color: #efefef;
-    }
+  &:hover {
+    background-color: rgba(233, 236, 239, 0.2);
+  }
 
-    &__active{
-        background-color: lightgrey;
-        &:hover{
-            background-color: lightgrey;
-        }
+  &__active {
+    background-color: rgba(222, 226, 230, 0.5);
+
+    &:hover {
+      background-color: rgba(222, 226, 230, 0.5);
     }
+  }
 }

@@ -1,5 +1,7 @@
 import { useRouter } from "next/router";
 import { useRef, useEffect, useState } from "react";
+import Image from "next/image";
+import logo from "../../public/logo.png";
 import s from "@/styles/login.module.scss";
 
 const Login = () => {
@@ -28,9 +30,10 @@ const Login = () => {
 
   return (
     <>
+      <link rel="icon" href="/logo.svg" />
       <div className={s.loginFrame}>
         <div className={s.loginForm}>
-          <h1>Login Page!</h1>
+          <Image src={logo} alt="logo" className={s.loginFormLogo} />
           <p>Enter username</p>
           <input
             ref={inputRef}
